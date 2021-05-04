@@ -19,7 +19,7 @@ pipeline {
                 withCredentials([usernamePassword(credentialsId: 'docker', passwordVariable: 'password', usernameVariable: 'username')]) {
                 
                     sh """
-                    docker run -d -p 8000:8000 hebamostafa123/jenkins_test:1.0
+                    docker run -d -p 3003:8000 hebamostafa123/jenkins_test:1.0
                     """
                 }
             }
